@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+         /* Position and appereance decide which selector will specify - last one will always select*/
+        /* The specificty of this selector is 1 */
+         h1{ 
+            color: aqua;
+        }
+         /* The specificty of this selector is 1 + 10 */
+        h1.yellow{
+            color: yellow;
+        }
+         /* The specificty of this selector is 10 */
+        .cred{
+            color: red;
+        }
+         /* The specificty of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* specificty decides which selector is most specific, it decides based on value.*/
+
+        /* this is an example of attribute selector,  /* The specificty of this selector is 10 */
+        [data-x=a]{
+            color: maroon;
+        }
+         /* The specificty of this selector is 1+ 10 + 10 + 10 + 10 = 41 */
+        a.nisahntclass.rohan-class[href]:hover{
+            color: blueviolet;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <h1 style="color: blue;">CSS two</h1>
+        <a class="nisahntclass" href="go">Go to class</a>
+    </div>
+</body>
+</html>

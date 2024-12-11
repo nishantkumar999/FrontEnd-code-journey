@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            /* margin auto keeps box in center, it only works on block elements, not on inline */
+            margin: 23px auto;
+            font-size: 2rem;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* margin auto keeps box in center, it only works on block elements, not on inline */
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+        .container > div{
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid red;
+            /* width: 50% --> means parent ki height ka 50 % */
+        }
+        
+        .container > div > div{
+            width: 50%;
+            border: 2px solid blue;
+
+        }
+        .mycount{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            /* for this device vmin is height that is equal to vh  */
+            width: 80vw; 
+        }
+         
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet est eaque voluptatum repellendus, maiores nihil porro, aliquam cupiditate hic sapiente quod deleniti ullam necessitatibus in dolores sequi! Id officiis voluptas nostrum asperiores neque soluta consectetur, ut totam saepe voluptate voluptatem doloremque, atque quasi illo! Quos, corporis. Quis illo corrupti consectetur iste, voluptatum labore placeat quam? 
+             <div>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos enim ad tempore, est saepe sit perspiciatis asperiores, magnam fuga temporibus repellat hic necessitatibus?
+             </div>
+        </div>   
+    </div>
+
+    <div class="mycount">
+        I am another container
+    </div>
+</body>
+</html>
