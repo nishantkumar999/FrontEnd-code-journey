@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dispaly Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* we can make element an inline element by display but it prevents it complete change in margin, padding etc. so, use inline block*/
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+
+        }
+
+        .box1{
+            /* difference between use of dispaly none: when it use, also area space removes with content and visibility hidden: when want area space to intact  but content rempves*/
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">I am also a nice box</div>
+
+    <span class="box">I am span</span>
+    <span>good</span>
+</body>
+
+</html>
