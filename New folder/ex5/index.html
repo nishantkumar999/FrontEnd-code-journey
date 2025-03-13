@@ -2,57 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Your Portfolio Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Portfolio Page</title>
 
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: sans-serif;
-            box-sizing: border-box;
-        }
-
-        body {
-            width: 100%;
-            height: 100vh;
-            background-image: url(background.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-        }
-
-        section {
-            width: 100%;
-            height: 90vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            backdrop-filter: brightness(94%);
-        }
-    </style>
 </head>
 
 <body>
-    <img src="image.jpg" height="100" alt="profile image">
-    <h1>Quad Jet</h1>
-    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#skills">Skills</a></li>
+      <li role="listitem"><a href="#porjects">Projects</a></li>
+    </ul>
+  </nav>
+  <img src="https://avatars.githubusercontent.com/u/30488380?v=4" alt="portrait of me" role="img" />
+  <h1 role="heading">Nishant Kumar</h1>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>List your skills here</p>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul role="list">
+      <li role="listitem">JAVA</li>
+      <li role="listitem">DSA</li>
+      <li role="listitem">Spring Boot</li>
+      <li role="listitem">DBMS</li>
+      <li role="listitem">SOL</li>
+    </ul>
+  </section>
 
-    <section id="projcets">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-        </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <ul role="list">
+      <li role="listitem">
+        <a href="">project 1</a>
+      </li>
+      <li role="listitem">
+        <a href="">Project 2</a>
+      </li>
+      <li role="listitem">
+        <a href="">Project 3</a>
+      </li>
+      <li role="listitem">
+        <a href="">Project 4</a>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>
